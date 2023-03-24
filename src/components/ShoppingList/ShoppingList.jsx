@@ -65,21 +65,20 @@ function ShoppingList() {
 
         <div>
             <h1>Shopping List</h1>
-            <button onClick={clearAll}>Clear</button>
+            <button onClick={clearAll} >Clear</button>
             <button onClick={resetAll}>Reset</button>
-                <ul>
+            <br></br>
+                <div className="itemGrid">
                     {
                         itemArray.map((item) => (
                             <ShoppingItem 
                                 key={item.id}
                                 item={item}
                                 fetchItemList={fetchItemList}
-                            
                             />
-
                         ))
                     }
-                </ul>
+                </div>
         </div>
         </>
     )
