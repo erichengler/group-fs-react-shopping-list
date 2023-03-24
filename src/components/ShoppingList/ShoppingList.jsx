@@ -32,7 +32,7 @@ function ShoppingList() {
             fetchItemList();
         }).catch((error) => {
             console.log( `Error in DELETE list2 ${error}` );
-            alert( 'Something went wrong! Better delete yourself' );
+            alert( 'Something went wrong!' );
         })
     }
 
@@ -65,7 +65,7 @@ function ShoppingList() {
 
         <div>
             <h1>Shopping List</h1>
-            <button onClick={clearAll} >Clear</button>
+            <button onClick={clearAll}>Clear</button>
             <button onClick={resetAll}>Reset</button>
                 <ul>
                     {
