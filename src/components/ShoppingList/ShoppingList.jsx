@@ -3,7 +3,9 @@ import axios from 'axios';
 import ShoppingForm from './ShoppingForm.jsx';
 import ShoppingItem from './ShoppingItem.jsx';
 import './ShoppingList.css';
-
+import Stack from '@mui/material/Stack';
+import Button from '@mui/material/Button';
+import { CenterFocusStrong } from '@mui/icons-material';
 
 
 function ShoppingList() {
@@ -65,8 +67,10 @@ function ShoppingList() {
 
         <div>
             <h1>Shopping List</h1>
-            <button onClick={clearAll} >Clear</button>
-            <button onClick={resetAll}>Reset</button>
+            <Stack justifyContent="center" spacing={2} direction="row">
+                <Button variant="outlined"  onClick={clearAll} >Clear</Button>
+                <Button variant="outlined"  onClick={resetAll}>Reset</Button>
+            </Stack>
             <br></br>
                 <div className="itemGrid">
                     {
