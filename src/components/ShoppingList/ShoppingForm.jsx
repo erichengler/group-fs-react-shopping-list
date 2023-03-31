@@ -1,5 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import Box from '@mui/material/Box';
+import TextField from '@mui/material/TextField';
+
 
 function ShoppingForm({ itemName, setItemName, itemQuant, setItemQuant, itemUnit, setItemUnit, fetchItemList }) {
 
@@ -23,15 +26,15 @@ function ShoppingForm({ itemName, setItemName, itemQuant, setItemQuant, itemUnit
 
     return (
         <>
-        <form onSubmit={addItem}>
+         <form onSubmit={addItem}>
             <h2>Add Item</h2>
-            Item: <input type="text" onChange={e => setItemName(e.target.value)} />
+            Item: <TextField id="filled-basic" label="Example: Apple" color="success" variant="filled" type="text" onChange={e => setItemName(e.target.value)} />
             <br />
             <br />
-            Quantity: <input type="number" onChange={e => setItemQuant(e.target.value)} />
+            Quantity: <TextField id="filled-basic" label="Example: 5" color="success" variant="filled" type="number" onChange={e => setItemQuant(e.target.value)} />
             <br />
             <br />
-            Unit: <input type="text" onChange={(e) => setItemUnit(e.target.value)} />
+            Unit: <TextField id="filled-basic" label="Example: Pounds" color="success" variant="filled" type="text" onChange={(e) => setItemUnit(e.target.value)} />
             <br />
             <br />
             <button >Save</button>
