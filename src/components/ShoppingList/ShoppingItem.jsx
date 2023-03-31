@@ -1,4 +1,6 @@
 import axios from 'axios';
+import Stack from '@mui/material/Stack';
+import Button from '@mui/material/Button';
 
 
 function ShoppingItem ({ item, fetchItemList }) {
@@ -25,7 +27,7 @@ function ShoppingItem ({ item, fetchItemList }) {
     return (
         <div className="contentDiv">
             <div className="listItem" key={item.id}>
-                < br/>
+
                 < br/>
                 {item.name}
                 <br />
@@ -33,8 +35,9 @@ function ShoppingItem ({ item, fetchItemList }) {
                 {item.quantity} {item.unit}
                 <br />
                 <br />
-                <button className="buy-button" onClick={ (event) => purchaseItem(event) }>{item.purchased}</button>
-                <button className="remove-button"onClick={ (event) => removeItem(event) }>Remove</button>
+                <Button size="small" variant="outlined" className="buy-button" onClick={ (event) => purchaseItem(event) }>{item.purchased}</Button>
+                <br />
+                <Button size="small" variant="outlined" className="remove-button"onClick={ (event) => removeItem(event) }>Remove</Button>
             </div>
         </div>
     )
