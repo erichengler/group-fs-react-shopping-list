@@ -1,6 +1,7 @@
 import React from 'react';
 
 import Header from '../Header/Header.jsx'
+import Footer from '../Footer/Footer.jsx'
 import ShoppingList from '../ShoppingList/ShoppingList.jsx';
 import './App.css';
 
@@ -12,6 +13,7 @@ function App() {
             <main>
                 <ShoppingList />
             </main>
+            <Footer />
         </div>
     );
 }
