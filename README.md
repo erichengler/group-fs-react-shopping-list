@@ -25,3 +25,13 @@ At the top of the list, a `Clear` button allows the user to delete ALL items fro
 3. Run `npm install` in your terminal
 4. Run `npm run server` in your terminal
 5. Run `npm run client` in a different terminal window
+
+## Acknowledgement
+
+Thanks to my group members for helping complete this assignment and for being awesome!
+
+Glonel Dimapilis
+https://github.com/ggSushi
+
+Jakob Engler
+https://github.com/jengler22
